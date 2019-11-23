@@ -6,4 +6,4 @@
         <img class="rounded img-fluid" src="{{ Gravatar::src($user->email, 500) }}" alt="">
     </div>
 </div>
-@include('user_follow.follow_button', ['user' => $user])
+@include('user_follow.follow_button', ['user' => $user])　<!-- ← 第2引数の ['user' => $user] は省略可（同一viewファイルに $user の記述があるため -->
